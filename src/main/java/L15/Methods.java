@@ -14,6 +14,6 @@ class Person {
     int age;
 
     void speak() {
-        System.out.println("Меня зовут " + name + "мне " + age + " лет");
+        System.out.println("Меня зовут " + name + "мне " + age + " лет.");
     }
 }
