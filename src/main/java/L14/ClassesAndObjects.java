@@ -13,6 +13,9 @@ public class ClassesAndObjects {
 
         System.out.println("Человека зовут " + person1.name);
         System.out.println("Его возраст " + person1.age);
+
+        System.out.println("Человека зовут " + person2.name);
+        System.out.println("Его возраст " + person2.age);
     }
 }
 
