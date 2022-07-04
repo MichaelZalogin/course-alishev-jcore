@@ -31,5 +31,9 @@ class Test {
         human1.setName("Иван");
         human1.setAge(24);
         human1.getInfo();
+        Human human2 = new Human();
+        human2.setName("Петр");
+        human2.setAge(29);
+        human2.getInfo();
     }
 }
