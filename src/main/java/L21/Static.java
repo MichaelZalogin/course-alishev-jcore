@@ -6,6 +6,8 @@ public class Static {
 class Human {
     private int age;
     private String name;
+    public static String descripton;
+    public static int salary;
 
     public Human(int age, String name) {
         this.age = age;
@@ -27,10 +29,19 @@ class Human {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void getAllFields() {
+        System.out.println(name + " " + age + " " + descripton);
+    }
 }
 
 class Test {
     public static void main(String[] args) {
         Human human1 = new Human(24, "Bob");
+        Human human2 = new Human(30, "Adam");
+        human1.setName("Tom");
+        Human.descripton = "Nice";
+        human1.getAllFields();
+        human2.getAllFields();
     }
 }
