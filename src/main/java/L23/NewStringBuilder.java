@@ -12,5 +12,6 @@ public class NewStringBuilder {
         StringBuilder sb3 = new StringBuilder("");
         StringBuilder sb4 = new StringBuilder(s1 + s2 + s3);
         System.out.println(sb4);
+        System.out.printf("%5d This is %2f a %3s string %5d", 10, 54.4, "HI", 15);
     }
 }
