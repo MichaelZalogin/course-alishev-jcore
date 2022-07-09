@@ -9,10 +9,13 @@ public class Inheritance {
         dog.eat();
         dog.sleep();
         dog.bark();
+        dog.showName();
     }
 }
 
 class Animal {
+    String name = "Some animal";
+
     public void eat() {
         System.out.println("Animal am eating");
     }
@@ -29,5 +32,9 @@ class Dog extends Animal {
 
     public void eat() {
         System.out.println("Dog am eating");
+    }
+
+    public void showName() {
+        System.out.println(name);
     }
 }
