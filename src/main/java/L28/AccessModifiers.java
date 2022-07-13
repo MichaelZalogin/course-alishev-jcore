@@ -1,6 +1,10 @@
 package L28;
 
 public class AccessModifiers {
+
+    public AccessModifiers() {
+    }
+
     public int id;
     protected int s3;
     int s2;
