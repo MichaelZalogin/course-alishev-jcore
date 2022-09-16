@@ -9,6 +9,11 @@ public class WildCards {
         listOfAnimals.add(new Animal(1));
         listOfAnimals.add(new Animal(2));
 
+        List<Dog> listOfDogs = new ArrayList<>();
+        listOfDogs.add(new Dog(1));
+        listOfDogs.add(new Dog(2));
+        test(listOfAnimals);
+//        test(listOfDogs);
     }
 
     private static void test(List<Animal> list) {
@@ -33,8 +38,6 @@ class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "id=" + id +
-                '}';
+        return String.valueOf(id);
     }
 }
