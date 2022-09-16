@@ -13,12 +13,13 @@ public class WildCards {
         listOfDogs.add(new Dog(1));
         listOfDogs.add(new Dog(2));
         test(listOfAnimals);
-//        test(listOfDogs);
+        test(listOfDogs);
     }
 
-    private static void test(List<Animal> list) {
+    private static void test(List<? extends Animal> list) {
         for (Animal animal : list) {
             System.out.println(animal);
+            animal.eat();
         }
     }
 }
@@ -34,6 +35,10 @@ class Animal {
 
     public Animal(int id) {
         this.id = id;
+    }
+
+    public void eat() {
+        System.out.println("eat");
     }
 
     @Override
